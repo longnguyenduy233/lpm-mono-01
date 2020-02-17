@@ -3,5 +3,10 @@
     "packages/*"
   ],
   "version": "independent",
-  "stream": true
+  "stream": true,
+  "command": {
+    "publish": {
+      "registry": "http://localhost:4873"
+    }
+  }
 }

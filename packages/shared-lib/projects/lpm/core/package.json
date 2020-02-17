@@ -1,0 +1,11 @@
+{
+  "name": "@lpm/core",
+  "version": "0.0.8",
+  "peerDependencies": {
+    "@angular/common": "^9.0.1",
+    "@angular/core": "^9.0.1",
+    "tslib": "^1.10.0",
+    "@angular/material": "^9.0.0",
+    "@angular/cdk": "^9.0.0"
+  }
+}

@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "lerna run start --scope=angular-main --stream",
-    "build": "lerna run build",
+    "build": "lerna run build --stream",
     "cleanup": "lerna clean --yes && rm -rf ./node_modules",
     "lerna": "lerna",
     "test": "lerna run test",

@@ -4,8 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button';
-import { CoreModule, CoreService } from '@lpm/core';
 
 @NgModule({
   declarations: [
@@ -14,13 +12,9 @@ import { CoreModule, CoreService } from '@lpm/core';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    CoreModule
+    BrowserAnimationsModule
   ],
-  providers: [
-    CoreService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
