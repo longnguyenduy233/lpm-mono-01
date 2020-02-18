@@ -1,0 +1,24 @@
+<div class={{className}}>
+    <label *ngIf="!isRequired">{{placeHolder}}</label>
+    <label *ngIf="isRequired">{{placeHolder}} *</label>
+    <mat-form-field>
+        <input matInput maxlength={{maxLength}} minlength={{minLength}} [formControl]="ngControl.control"
+            [class.is-invalid]="ngControl.invalid" [type]="typeInput" [value]="this._value" (focus)="onTouch($event)"
+            (keyup)="onKeyUp($event)" (keydown)="onKeyPress($event)" (blur)="onBlur($event)">
+
+        <mat-hint *ngIf="maxLength && !maxLengthException" align="end">{{ngControl.control.value?.length || 0}}/{{maxLength}}</mat-hint>
+        <mat-hint *ngIf="maxLengthException" align="end">
+            {{  ngControl.control.value ? ngControl.control.value.split('.')[0].split(exceptionChar).join('').length : 0}}/{{maxLengthException}}
+        </mat-hint>
+        
+        <mat-error *ngIf="ngControl.hasError('required')">
+            (*) {{placeHolder}} is required
+        </mat-error>
+        <mat-error *ngIf="ngControl.hasError('minlength') && !minLengthException">
+            (*) Min length is {{ngControl.errors['minlength'].requiredLength}}
+        </mat-error>
+        <mat-error *ngIf="ngControl.hasError('minlength') && minLengthException">
+            (*) Min length is {{minLengthException}}
+        </mat-error>
+    </mat-form-field>
+</div>

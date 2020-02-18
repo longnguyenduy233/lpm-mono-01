@@ -902,10 +902,10 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.2.tgz#26520bf09abe4a5644cd5414e37125a8954241dd"
   integrity sha512-tsAQNx32a8CoFhjhijUIhI4kccIAgmGhy8LZMZgGfmXcpMbPRUqn5LWmgRttILi6yeGmBJd2xsPkFMs0PzgPCw==
 
-"@lpm/core@^0.0.8":
-  version "0.0.8"
-  resolved "http://localhost:4873/@lpm%2fcore/-/core-0.0.8.tgz#7b7bbf72e5ee3c2f0288c8ae5465d52f4fffb061"
-  integrity sha512-PYZx9PyUMwzs4EMLK6DwIUVJwRfpRBrgJztSMsVgpS0zu0EeqkGnWPNsOlXifnnOToXM33WC33zmmaEavHvRRw==
+"@lpm/core@^0.0.10":
+  version "0.0.10"
+  resolved "http://localhost:4873/@lpm%2fcore/-/core-0.0.10.tgz#209b514c9ff683904c830114d99ce4813e0bbbed"
+  integrity sha512-8Sxm0pn5RbxBjEPQZK88x/rkKMIccELITQ6oXidHk6IsMluUNHaUo8nOlNQo4B9n7MIwZ/gf1i82181Uq9PNeg==
 
 "@ngtools/webpack@9.0.2":
   version "9.0.2"
@@ -1686,6 +1686,11 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
+
+bootstrap@4.1.1:
+  version "4.1.1"
+  resolved "http://localhost:4873/bootstrap/-/bootstrap-4.1.1.tgz#3aec85000fa619085da8d2e4983dfd67cf2114cb"
+  integrity sha512-SpiDSOcbg4J/PjVSt4ny5eY6j74VbVSjROY4Fb/WIUXBV9cnb5luyR4KnPvNoXuGnBK1T+nJIWqRsvU3yP8Mcg==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -5378,6 +5383,16 @@ neo-async@^2.5.0, neo-async@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
+
+ngx-bootstrap@^5.3.2:
+  version "5.3.2"
+  resolved "http://localhost:4873/ngx-bootstrap/-/ngx-bootstrap-5.3.2.tgz#0668b01202610657e998b3ca87669645e0b31dc9"
+  integrity sha512-gSMf8EXYl99Q3gqkq4RVhoTNSTYHz2Or6Cig2BJRbLJyqk15ZQE5qcq/ldHS8zzx/wgCA3HQeI63t2j2mEU9PA==
+
+ngx-pagination@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/ngx-pagination/-/ngx-pagination-5.0.0.tgz#a4b4c150a70aef17ccd825e4543e174a974bbd14"
+  integrity sha512-Ur0pTWRe2ZXoJ8impEzo0IZKxY5aEcQfSmL5uBqW1rHI2J6nfzgZAHsSLagKHFGchXq0PkRlDVVMcIaNxYJwvQ==
 
 nice-try@^1.0.4:
   version "1.0.5"
