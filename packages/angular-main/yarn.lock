@@ -902,15 +902,10 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.2.tgz#26520bf09abe4a5644cd5414e37125a8954241dd"
   integrity sha512-tsAQNx32a8CoFhjhijUIhI4kccIAgmGhy8LZMZgGfmXcpMbPRUqn5LWmgRttILi6yeGmBJd2xsPkFMs0PzgPCw==
 
-"@lpm/core-styles@^0.0.2":
+"@lpm/core-styles@^0.0.1":
   version "0.0.2"
   resolved "http://localhost:4873/@lpm%2fcore-styles/-/core-styles-0.0.2.tgz#06bf78814a764470b3d9cfe1c2f530ff81d7e579"
   integrity sha512-QcSlnX6uUSX64rcZln9Im7p6ezLzKU5sVnv8C9mHW4CX9H/c+k0sIzwC/cgUh8Rmploun9SdIwpUfGfA5H7WFw==
-
-"@lpm/core@^0.0.10":
-  version "0.0.10"
-  resolved "http://localhost:4873/@lpm%2fcore/-/core-0.0.10.tgz#209b514c9ff683904c830114d99ce4813e0bbbed"
-  integrity sha512-8Sxm0pn5RbxBjEPQZK88x/rkKMIccELITQ6oXidHk6IsMluUNHaUo8nOlNQo4B9n7MIwZ/gf1i82181Uq9PNeg==
 
 "@ngtools/webpack@9.0.2":
   version "9.0.2"

@@ -1,6 +1,7 @@
 {
   "packages": [
-    "packages/*"
+    "packages/*",
+    "packages/shared-lib/dist/lpm/*"
   ],
   "version": "independent",
   "stream": true,

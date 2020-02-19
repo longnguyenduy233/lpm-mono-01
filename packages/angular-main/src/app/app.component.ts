@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { OverlayContainer } from '@angular/cdk/overlay';
 
 @Component({
   selector: 'app-root',
@@ -19,4 +20,12 @@ export class AppComponent {
       ])
     )
   });
+
+  constructor(public overlayContainer: OverlayContainer){}
+  @HostBinding('class') componentCssClass;
+
+  onSetTheme(theme) {
+    this.overlayContainer.getContainerElement().classList.add(theme);
+    this.componentCssClass = theme;
+  }
 }

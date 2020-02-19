@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { CoreModule, CoreService } from '@lpm/core';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { OverlayModule } from '@angular/cdk/overlay';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CoreModule,
     ButtonsModule.forRoot(),
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    OverlayModule
   ],
   providers: [
     CoreService

@@ -1,0 +1,8 @@
+@import '~@angular/material/theming';
+
+// Default colors
+$my-app-primary: mat-palette($mat-teal, 700, 100, 800);
+$my-app-accent:  mat-palette($mat-teal, 700, 100, 800);
+
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent);
+@include angular-material-theme($my-app-theme);

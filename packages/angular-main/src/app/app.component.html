@@ -1,7 +1,11 @@
-<button mat-raised-button color="primary">Default</button>
 <button type="button" class="btn btn-primary">
     NGX Bootstrap
 </button>
+<div>
+    <button mat-raised-button color="primary" (click)="onSetTheme('default-theme')">Default</button>
+    <button mat-raised-button color="primary" (click)="onSetTheme('dark-theme')">Dark</button>
+    <button mat-raised-button color="primary" (click)="onSetTheme('light-theme')">Light</button>
+</div>
 <form [formGroup]='roleDetailForm'>
     <lib-custom-currency
         placeHolder='DR. LIMIT'
@@ -12,7 +16,8 @@
         formControlName='drLimit'
         [isRequired]='true'
         [isFirstLoad]='true'
-
     >
     </lib-custom-currency>
 </form>
+
+<h1 class="core-message">LPM project</h1>
