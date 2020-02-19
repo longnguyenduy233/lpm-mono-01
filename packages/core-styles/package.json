@@ -1,6 +1,6 @@
 {
   "name": "@lpm/core-styles",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "index.js",
   "author": "Long",
   "license": "MIT",
@@ -14,6 +14,5 @@
     "stylelint-config-prettier": "^2.0.0",
     "stylelint-declaration-use-variable": "^1.6.0",
     "validate-commit-msg": "^2.14.0"
-  },
-  "gitHead": "633279b73587a486dbc2b54e01de5fcc32bf2e1d"
+  }
 }
