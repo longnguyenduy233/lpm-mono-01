@@ -13,5 +13,6 @@
   },
   "publishConfig": {
     "directory": "../../../dist/lpm/core"
-  }
+  },
+  "gitHead": "063ba973510b10585d1dc796deac5f1d0da20b71"
 }
