@@ -1,9 +1,14 @@
 {
   "name": "lpm-mono-01",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "index.js",
   "author": "Long",
   "license": "MIT",
+  "private": true,
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/lovemoon23/lpm-mono-01.git"
+	},
   "scripts": {
     "start": "lerna run start --scope=angular-main --stream",
     "build": "lerna run build --stream",
