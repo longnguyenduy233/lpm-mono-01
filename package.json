@@ -16,7 +16,6 @@
     "lerna": "lerna",
     "test": "lerna run test",
     "lint": "lerna run lint",
-    "publish": "lerna publish --skip-git",
     "build-lib": "lerna run build --scope=shared-lib"
   },
   "devDependencies": {
