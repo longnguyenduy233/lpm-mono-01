@@ -1,12 +1,21 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { CoreModule } from '@lpm/core';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { MatButtonModule } from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        CoreModule,
+        ButtonsModule.forRoot(),
+        MatButtonModule,
+        BrowserAnimationsModule
       ],
       declarations: [
         AppComponent
