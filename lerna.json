@@ -1,7 +1,7 @@
 {
   "packages": [
-    "core-styles",
-    "packages/shared-lib/dist/lpm/*"
+    "packages/core-styles",
+    "packages/shared-lib/projects/lpm/*"
   ],
   "version": "independent",
   "stream": true,

@@ -1,6 +1,6 @@
 {
   "name": "@lpm/core",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "peerDependencies": {
     "@angular/common": "^9.0.1",
     "@angular/core": "^9.0.1",
@@ -10,5 +10,8 @@
     "bootstrap": "4.1.1",
     "ngx-bootstrap": "^5.3.2",
     "@angular/forms": "~9.0.1"
+  },
+  "publishConfig": {
+    "directory": "../../../dist/lpm/core"
   }
 }
