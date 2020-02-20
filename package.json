@@ -14,6 +14,7 @@
     "build": "lerna run build --stream",
     "cleanup": "lerna clean --yes && rm -rf ./node_modules",
     "lerna": "lerna",
+    "bootstrap": "lerna bootstrap",
     "test": "lerna run test",
     "lint": "lerna run lint",
     "build-lib": "lerna run build --scope=shared-lib"

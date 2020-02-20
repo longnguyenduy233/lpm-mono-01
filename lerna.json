@@ -1,6 +1,6 @@
 {
   "packages": [
-    "packages/core-styles",
+    "packages/*",
     "packages/shared-lib/projects/lpm/*"
   ],
   "version": "independent",

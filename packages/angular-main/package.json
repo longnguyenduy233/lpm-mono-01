@@ -1,6 +1,6 @@
 {
   "name": "angular-main",
-  "version": "0.0.14",
+  "version": "0.0.16",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -21,8 +21,8 @@
     "@angular/platform-browser": "~9.0.1",
     "@angular/platform-browser-dynamic": "~9.0.1",
     "@angular/router": "~9.0.1",
-    "@lpm/core": "^0.0.10",
-    "@lpm/core-styles": "^0.0.6",
+    "@lpm/core": "^0.0.14",
+    "@lpm/core-styles": "^0.0.10",
     "bootstrap": "4.1.1",
     "ngx-bootstrap": "^5.3.2",
     "ngx-pagination": "^5.0.0",
