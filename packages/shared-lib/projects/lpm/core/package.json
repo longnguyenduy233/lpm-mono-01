@@ -1,8 +1,8 @@
 {
   "name": "@lpm/core",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "scripts": {
-    "prepublish": "yarn build"
+    "prepublish": "ng build @lpm/core"
   },
   "peerDependencies": {
     "@angular/cdk": "^9.0.0",
@@ -17,5 +17,5 @@
   "publishConfig": {
     "directory": "../../../dist/lpm/core"
   },
-  "gitHead": "063ba973510b10585d1dc796deac5f1d0da20b71"
+  "gitHead": "913f450b57cfba67525ef377715cd4b2f21202bf"
 }
