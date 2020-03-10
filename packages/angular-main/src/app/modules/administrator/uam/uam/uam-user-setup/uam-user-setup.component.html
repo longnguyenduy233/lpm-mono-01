@@ -1,0 +1,18 @@
+<div fxFlex fxLayout="column" fxLayoutGap="1%">
+    <app-toolbar [formGroup]="formGroup" [searchCriteriaList]="searchCriteriaList" (searchEmit)="onBtnSearchClick($event)" [actionBtns]="actionBtns">
+    </app-toolbar>
+    <div fxFlex fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="2%" fxLayout.xs="column" fxLayoutGap.xs="0%">
+        <div fxFlex="33" fxFlex.xs="100">
+            <mat-card>
+                <mat-action-list>
+                    <ng-container *ngFor="let item of users">
+                        <button mat-list-item (click)="onClickListItem(item)">{{item.userId+' '+item.userName}}</button>
+                    </ng-container>
+                </mat-action-list>
+            </mat-card>
+        </div>
+        <div fxFlex="65" fxFlex.xs="100">
+            
+        </div>
+    </div>
+</div>

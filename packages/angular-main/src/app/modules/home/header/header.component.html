@@ -1,0 +1,61 @@
+<mat-toolbar>
+    <span> {{ header }} </span>
+    <div fxFlex fxHide.lt-md class="logout-btn">
+        <!-- <app-popover [data]="userInfo" [notificationData]="notificationData" (action)="logout()" [isCollapse]=false
+            [showFunctionProfile]="showFunctionProfile" [showNotification]="showNotification">
+        </app-popover> -->
+        <button mat-button color="primary" [matMenuTriggerFor]="themeMenu">
+            <mat-icon>format_color_fill</mat-icon>
+        </button>
+        <mat-menu #themeMenu >
+            <button mat-menu-item (click)="onThemeValueChange('default-theme')">
+                <mat-icon [color]="themeRadioChecked === 'default-theme'? 'accent':''">{{ themeRadioChecked === 'default-theme'?'radio_button_checked': 'radio_button_unchecked'}}</mat-icon>
+                Default theme
+            </button>
+            <button mat-menu-item (click)="onThemeValueChange('dark-theme')">
+                <mat-icon [color]="themeRadioChecked === 'dark-theme'? 'accent':''">{{ themeRadioChecked === 'dark-theme'?'radio_button_checked': 'radio_button_unchecked'}}</mat-icon>
+                Dark theme
+            </button>
+            <button mat-menu-item (click)="onThemeValueChange('light-theme')">
+                <mat-icon [color]="themeRadioChecked === 'light-theme'? 'accent':''">{{ themeRadioChecked === 'light-theme'?'radio_button_checked': 'radio_button_unchecked'}}</mat-icon>
+                Light theme
+            </button>
+            <button mat-menu-item (click)="logout()">
+                <mat-icon>format_indent_decrease</mat-icon>
+                Log Out
+            </button>
+        </mat-menu>
+    </div>
+</mat-toolbar>
+
+<mat-toolbar color="primary">
+    <div fxFlex fxHide.gt-sm>
+        <div fxLayout="row" fxLayoutAlign="space-between none">
+            <button mat-icon-button (click)="onToggleSidenav()">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <!-- <app-popover [data]="userInfo" [notificationData]="notificationData" (action)="logout()" [isCollapse]=true
+                [showFunctionProfile]="showFunctionProfile" [showNotification]="showNotification">
+            </app-popover> -->
+        </div>
+    </div>
+    <div fxFlex fxHide.lt-md>
+        <ul fxLayout="row" fxLayoutAlign="space-between center">
+            <li *ngFor="let item of navItems">
+                <!-- Handle branch node buttons here -->
+                <!-- <span *ngIf="item.children && item.children.length > 0">
+                    <button mat-button [matMenuTriggerFor]="menu.childMenu" [disabled]="item.disabled">
+                        {{item.displayName}}
+                    </button>
+                    <app-menu-item #menu [items]="item.children"></app-menu-item>
+                </span> -->
+                <!-- Leaf node buttons here -->
+                <span *ngIf="!item.children || item.children.length === 0">
+                    <button mat-button [routerLink]="item.route" [disabled]="item.disabled">
+                        {{item.displayName}}
+                    </button>
+                </span>
+            </li>
+        </ul>
+    </div>
+</mat-toolbar>

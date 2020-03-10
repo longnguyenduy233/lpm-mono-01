@@ -1,0 +1,27 @@
+@import 'scss/abstracts/variables';
+
+h2 {
+    color: $text-color;
+ }
+ 
+ .main-container {
+   position: relative;
+   height: auto;
+   padding: 0px;
+   background: #fff;
+   -moz-border-radius: 6px;
+   -webkit-border-radius: 6px;
+   border-radius: 6px;
+   min-height: 100%;
+ }
+ 
+ mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+   height: 100%;
+ }
+ 
+ mat-sidenav {
+   width: 20rem;
+ }
+ main {
+   height: 100%;
+ }

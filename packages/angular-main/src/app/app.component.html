@@ -1,4 +1,4 @@
-<button type="button" class="btn btn-primary">
+<!-- <button type="button" class="btn btn-primary">
     NGX Bootstrap
 </button>
 <div>
@@ -20,4 +20,49 @@
     </lib-custom-currency>
 </form>
 
-<h1 class="core-message">LPM project</h1>
+<h1 class="core-message">LPM project</h1> -->
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav role='navigation'>
+      <app-menu (sidenavClose)='sidenav.close()'></app-menu>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <main>
+          <div class='main-container'>
+              <app-header *ngIf='isLoggedIn | async' (sidenavToggle)='sidenav.toggle()' (themeToggle)="onSetTheme($event)"></app-header>
+              <router-outlet></router-outlet>
+          </div>
+          <div>
+            <app-footer *ngIf='isLoggedIn | async'></app-footer>
+          </div>
+      </main>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+<!-- Modal section -->
+<div bsModal #childModal="bs-modal" class="modal fade" tabindex="-1"
+     role="dialog" aria-labelledby="dialog-child-name" [config]="{backdrop: 'static'}">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-child-name" class="modal-title pull-left">You Have Been Idle!</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="stay()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         {{idleState}}
+        <div class="row mrgbtm">
+          <div class="col-md-6">
+              <button type="button" (click)="logout()" class="btn btn-danger">Logout</button>
+          </div>
+          <div class="col-md-6">
+              <button type="button" (click)="stay()" class="btn btn-success">Stay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

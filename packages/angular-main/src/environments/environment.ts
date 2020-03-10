@@ -3,7 +3,20 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  API_USER_BASE_PATH: 'http://localhost:8090',
+  API_ROLE_BASE_PATH: 'http://localhost:8090',
+  API_USER_PROFILE_BASE_PATH: 'http://localhost:8090',
+  API_USER_PERIOD_BASE_PATH: 'http://localhost:8090',
+  API_SYSTEM_PERIOD_BASE_PATH: 'http://localhost:8090',
+  API_MANUAL_PERIOD_BASE_PATH: 'http://localhost:8090',
+  API_KEYS: 'KEY',
+  API_VALUE: 'password',
+
+  USER_MANAGEMENT_SERVICE_ENDPOINT: 'http://172.30.74.48:8443/user-management',
+  AUTH_SERVICE_ENDPOINT: 'http://172.30.16.126:9080/api/v1',
+  SAFE_BOX_MANAGEMENT_SERVICE_ENDPOINT: 'http://172.30.74.48:8443/safe-box-management',
+  GENERAL_TRANSFER_SERVICE_ENDPOINT: 'http://172.30.74.48:8443/general-transfer'
 };
 
 /*

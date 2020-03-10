@@ -1,0 +1,31 @@
+<!--  -->
+<div class="signin">
+<div fxFlex fxLayout="column" fxLayoutAlign="center center">
+  <div>
+    <img src='assets/images/kasikorn-logo-full.png' alt='Avatar'>
+  </div>
+  <h1 class="mt-3">{{header}}</h1>
+  <mat-card class="card-container">
+    <mat-card-content fxFlex fxLayout="column" fxLayoutAlign="center stretch">
+      <mat-form-field>
+        <mat-label>Username / รหัสพนักงาน</mat-label>
+        <input matInput placeholder="" [(ngModel)]='username'>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Password / รหัสผ่าน</mat-label>
+        <input matInput type="password" placeholder="" [(ngModel)]='password'>
+      </mat-form-field>
+      <div class='mt-4'>
+        <button class="login-btn" mat-raised-button color="primary" (click)='handleSubmitLoginForm()'>
+        Login
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <div class='footer mt-3 py-1'>
+    <span>{{conf.copyright}}</span>
+    <br/>
+    <span>version {{conf.version}}</span>
+  </div>
+</div>
+</div>

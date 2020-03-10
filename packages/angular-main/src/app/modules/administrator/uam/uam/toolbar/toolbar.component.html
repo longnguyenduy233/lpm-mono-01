@@ -1,0 +1,33 @@
+<div fxFlex fxLayout="row" fxLayoutAlign="space-between center" fxLayout.fxFlex.xs="column" fxLayoutGap="1%" fxLayoutGap.xs="0%">
+    <div fxFlex="66"  fxFlex.xs="100" fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="2%">
+        <ng-container [formGroup]="formGroup">
+            <ng-container *ngFor="let item of searchCriteriaList">
+                <mat-form-field>
+                    <input matInput
+                    [placeholder]="item.placeholder || ''"
+                    [class]="item?.class"
+                    formControlName="{{item.formControlName}}"
+                    [maxLength]="item.maxLength || 10"
+                    [minLength]="item.minLength || 10"
+                    >
+                </mat-form-field>
+            </ng-container>
+        </ng-container>
+        <button mat-raised-button color="primary" (click)="onBtnSearchClick()" *ngIf="searchCriteriaList?.length > 0">
+            <mat-icon aria-label="seach icon">
+                search
+            </mat-icon>
+            Search
+        </button>
+    </div>
+    <div fxFlex="33"  fxFlex.xs="100" fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="4%">
+        <ng-container *ngFor="let item of actionBtns">
+            <button mat-raised-button [color]="item.color" (click)="item.action()">
+                <mat-icon aria-label="seach icon">
+                    {{item.icon}}
+                </mat-icon>
+                {{item.text}}
+            </button>
+        </ng-container>
+    </div>
+</div>

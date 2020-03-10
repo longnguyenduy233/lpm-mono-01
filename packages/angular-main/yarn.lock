@@ -187,6 +187,11 @@
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-9.0.1.tgz#8908112ce6bb22aa1ae537230240ef9a324409ad"
   integrity sha512-q/3VLGM98euB/ZluSuMqvWyQb563iabRcVkC/DrHqCQMadV1ZpvuOgf8Gm092d8GY/iC4CGlTsN0wiVapMxplQ==
 
+"@angular/flex-layout@^9.0.0-beta.29":
+  version "9.0.0-beta.29"
+  resolved "http://localhost:4873/@angular%2fflex-layout/-/flex-layout-9.0.0-beta.29.tgz#a334ffd15c272e2d48cdaef3879625aadcc13a54"
+  integrity sha512-93sxR+kYfYMOdnlWL0Q77FZ428gg8XnBu0YZm6GsCdkw/vLggIT/G1ZAqHlCPIODt6pxmCJ5KXh4ShvniIYDsA==
+
 "@angular/forms@~9.0.1":
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-9.0.1.tgz#e95daa336ea93c6236fdc8863d01eaabc4070004"
@@ -902,10 +907,22 @@
   resolved "https://registry.yarnpkg.com/@istanbuljs/schema/-/schema-0.1.2.tgz#26520bf09abe4a5644cd5414e37125a8954241dd"
   integrity sha512-tsAQNx32a8CoFhjhijUIhI4kccIAgmGhy8LZMZgGfmXcpMbPRUqn5LWmgRttILi6yeGmBJd2xsPkFMs0PzgPCw==
 
-"@lpm/core-styles@^0.0.6":
-  version "0.0.6"
-  resolved "http://localhost:4873/@lpm%2fcore-styles/-/core-styles-0.0.6.tgz#9124992e838ee0848a3962ee2a83dfd467297cc7"
-  integrity sha512-PqrB5lNEg7r59mpSL6BivOS4nWipwbQsJGz24Gv4SQSK92fP/7c+DU++j9kNgsSU9VQW9sHuv2LNX5jXJh/ZUg==
+"@lpm/core-styles@^0.0.10":
+  version "0.0.11"
+  resolved "http://localhost:4873/@lpm%2fcore-styles/-/core-styles-0.0.11.tgz#c680c6307a5dbd9a823e6cc9835dad8e9bc5401f"
+  integrity sha512-uE+OAsUnUTo/maH24uZ/hsz6pyKDn0ClfxwKinWcVbrSr3S1hVlWX1FJ4Xc4NyrnhQ5SPKAfbv0EKk0HfoPwPw==
+
+"@lpm/core@^0.0.14":
+  version "0.0.14"
+  resolved "http://localhost:4873/@lpm%2fcore/-/core-0.0.14.tgz#59a3469a3185eb8692fc74a9bae912c373dbe166"
+  integrity sha512-3nvLjgUwseGJnvCSVjvC9UYKCXPWjGkiaokFwwjqq2+xfxxyFdv2f5WQ6HZ2UhdwaW8MNgFRFzgR2Yow7+kQeQ==
+
+"@ng-idle/core@^8.0.0-beta.4":
+  version "8.0.0-beta.4"
+  resolved "http://localhost:4873/@ng-idle%2fcore/-/core-8.0.0-beta.4.tgz#c856bb2dd3c8407321380faac8c5692a5728fd0d"
+  integrity sha512-bI/tt7F5+z/w6b6SzNPc0+9rJ1knWgLzQweLd6xUQ7HHFrHsmBlJYUGiSv0cYUY+2RZAmIDbevwUDKLWmdE55w==
+  dependencies:
+    tslib "^1.9.0"
 
 "@ngtools/webpack@9.0.2":
   version "9.0.2"
@@ -1275,6 +1292,11 @@ alphanum-sort@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
+
+angular-crumbs@^3.0.1:
+  version "3.0.1"
+  resolved "http://localhost:4873/angular-crumbs/-/angular-crumbs-3.0.1.tgz#d87f8b5c63b93e3515ac8082e5a7887118d52c06"
+  integrity sha512-ej6HaDJVrGlgZG1dzVg9+bfi8FGgEFOjmq08jdDu5hI6GR5NOpWlXFFXh/jbt4e2Z3poSwKZYJTkyCrEIHDegA==
 
 ansi-colors@4.1.1:
   version "4.1.1"
@@ -4758,6 +4780,11 @@ jszip@^3.1.3:
     pako "~1.0.2"
     readable-stream "~2.3.6"
     set-immediate-shim "~1.0.1"
+
+jwt-decode@^2.2.0:
+  version "2.2.0"
+  resolved "http://localhost:4873/jwt-decode/-/jwt-decode-2.2.0.tgz#7d86bd56679f58ce6a84704a657dd392bba81a79"
+  integrity sha1-fYa9VmefWM5qhHBKZX3TkruoGnk=
 
 karma-chrome-launcher@~3.1.0:
   version "3.1.0"
